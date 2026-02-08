@@ -1,0 +1,298 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 20px 10%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #BC1823; /* Blood Red */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, .active {
+    color: #BC1823;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1615461066841-6116ecaaba30?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #BC1823;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10%;
+    background: white;
+}
+
+.feature-box {
+    text-align: center;
+    flex-basis: 30%;
+}
+
+.feature-box h3 {
+    color: #BC1823;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+}
+/* Registration Page Styles */
+.form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    color: #BC1823;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.reg-form .input-group {
+    margin-bottom: 20px;
+}
+
+.reg-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.reg-form input, .reg-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.reg-form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+/* Gallery Styles */
+.gallery-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.gallery-header h1 {
+    color: #BC1823;
+    font-size: 36px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px 10%;
+    margin-bottom: 50px;
+}
+
+.gallery-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.caption {
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    color: #555;
+}
+/* About Page Styles */
+.about-hero {
+    background: #BC1823;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-content {
+    padding: 50px 10%;
+    line-height: 1.6;
+}
+
+.text-block {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.process-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.step {
+    text-align: center;
+    font-weight: bold;
+}
+
+.step span {
+    display: block;
+    background: #BC1823;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.nutrition-box {
+    border-left: 5px solid #2D6A4F; /* Green for health */
+    background: #e9f5ee;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.nutrition-box h3 {
+    color: #2D6A4F;
+}
+/* Contact Page Styles */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 10%;
+    gap: 40px;
+    background: #fff;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.info-item {
+    margin: 20px 0;
+}
+
+.map-box {
+    height: 200px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+    margin-top: 20px;
+}
+
+.contact-form form input, .contact-form form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form h2, .contact-info h2 {
+    color: #BC1823;
+    margin-bottom: 20px;
+}

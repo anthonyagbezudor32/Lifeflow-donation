@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | LifeFlow Blood Donation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">LifeFlow 🩸</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="registration.html" class="active">Registration</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="form-container">
+        <h2>Donor Registration Form</h2>
+        <p>Please fill out the details below to join our donor database.</p>
+        
+        <form action="#" method="POST" class="reg-form">
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="email@example.com" required>
+            </div>
+
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+233..." required>
+            </div>
+
+            <div class="input-group">
+                <label>Blood Group (if known)</label>
+                <select>
+                    <option value="">Select Blood Type</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="unknown">I don't know</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Last Donation Date</label>
+                <input type="date">
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" id="eligible" required>
+                <label for="eligible">I confirm that I am at least 18 years old and in good health.</label>
+            </div>
+
+            <button type="submit" class="btn">Submit Registration</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LifeFlow Blood Donation Assignment | Accra, Ghana</p>
+    </footer>
+
+</body>
+</html>
